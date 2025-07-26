@@ -9,7 +9,11 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = int(input("Enter your choice: "))
+        try:
+           choice = int(input("Enter your choice: "))
+        except ValueError:
+           print("Please enter a valid number.")
+           continue
 
         if choice == '1':
             # Prompt for and add an item
