@@ -9,15 +9,12 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        try:
-           choice = int(input("Enter your choice: "))
-        except ValueError:
-           print("Please enter a valid number.")
-           continue
+        choice = int(input("Enter your choice: "))
 
         if choice == '1':
             # Prompt for and add an item
-            item = input("Enter the name of the item: ")
+            item = input("Enter the item to add: ")
+
             shopping_list.append(item)
             print(shopping_list)
             
