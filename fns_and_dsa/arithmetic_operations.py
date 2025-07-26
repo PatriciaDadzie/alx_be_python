@@ -6,17 +6,17 @@ def perform_operation(num1 , num2 , operation):
 
     # Match case to handle all the operations
     match operation:
-        case "+":
+        case "add":
             return num1 + num2
 
-        case "-":
+        case "subtract":
             return num1 - num2    
 
-        case "*":
+        case "multiply":
             return num1 * num2
 
         
-        case "/": 
+        case "divide": 
          # If else to handle num2 = 0
          if num2 != 0:
             return num1 / num2
