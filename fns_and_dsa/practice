@@ -1,0 +1,9 @@
+import os
+try :
+    f = open( 'C:\\Users\\PATRICIA DADZIE\\OneDrive\\Documents\\Ankomah')
+
+except FileNotFoundError:
+    print("File doesn't exist")
+
+else:
+    print(f.read())
