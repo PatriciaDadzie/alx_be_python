@@ -8,7 +8,7 @@ def safe_divide(numerator, denominator):
         denom = float(denominator)
 
         result = num / denom
-        return f"Result: {result}"
+        return f"The result of the division is {result}"
     
        #An exception to handle Zero Division error
     except ZeroDivisionError:
