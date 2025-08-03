@@ -10,14 +10,15 @@ class BankAccount:
        if amount > 0:
            self.account_balance += amount
 
-# Deposit function that deduct a specified amount to account_balance( handles sufficient and insufficient balances)
+# Withdraw function that deducts a specified amount ( handles sufficient and insufficient balances)
     def withdraw(self, amount):
-         self.account_balance -= amount   
-         if amount <= self.account_balance:
+        if amount <= self.account_balance:
+            self.account_balance -= amount
             return True
-         else:
+        else:
             print("Insufficient funds.")
             return False
-         
-    def display_balance(self):
-        print(f"Current balance: ${self.account_balance:.1f}")
+
+# print the current balance         
+def display_balance(self):
+        print(f"Current balance: ${self.account_balance:}")
