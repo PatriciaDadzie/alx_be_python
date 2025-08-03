@@ -7,12 +7,13 @@ class BankAccount:
 
 # Deposit function that adds a specified amount to account_balance
     def deposit(self, amount):
-       self.account_balance += amount
+       if amount > 0:
+           self.account_balance += amount
 
 # Deposit function that deduct a specified amount to account_balance( handles sufficient and insufficient balances)
     def withdraw(self, amount):
          self.account_balance -= amount   
-         if self.account_balance >= amount:
+         if amount <= self.account_balance:
             return True
          else:
             print("Insufficient funds.")
